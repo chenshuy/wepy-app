@@ -1,5 +1,5 @@
-const path = require('path')
-var prod = process.env.NODE_ENV === 'production'
+const path = require('path');
+var prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
   wpyExt: '.wpy',
@@ -40,7 +40,7 @@ module.exports = {
   appConfig: {
     noPromiseAPI: ['createSelectorQuery']
   }
-}
+};
 
 if (prod) {
   // 压缩sass
@@ -64,5 +64,5 @@ if (prod) {
         }
       }
     }
-  }
+  };
 }

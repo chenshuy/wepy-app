@@ -1,31 +1,52 @@
 <style lang="less">
-
+  @import './styles/base';
+  @import './styles/iconfont';
 </style>
 
 <script>
-import wepy from 'wepy'
-import 'wepy-async-function'
-
-export default class extends wepy.app {
+import wepy from 'wepy';
+export default class App extends wepy.app {
   config = {
     pages: [
-      'pages/login',
       'pages/index'
     ],
     window: {
-      backgroundTextStyle: 'light',
+      backgroundTextStyle: 'dark',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'black',
+      backgroundColor: '#EFEFEF'
     }
+    // tabBar: {
+    //   'color': '#999999',
+    //   'selectedColor': '#ff6a3c',
+    //   'backgroundColor': '#ffffff',
+    //   'borderStyle': 'black',
+    //   'list': [{
+    //     'pagePath': 'pages/index',
+    //     'text': '首页',
+    //     'iconPath': 'images/icon_home.png',
+    //     'selectedIconPath': 'images/icon_home_active.png'
+    //   }, {
+    //     'pagePath': 'pages/order',
+    //     'text': '订单',
+    //     'iconPath': 'images/icon_classify.png',
+    //     'selectedIconPath': 'images/icon_classify_active.png'
+    //   }, {
+    //     'pagePath': 'pages/shop_cart',
+    //     'text': '购物车',
+    //     'iconPath': 'images/icon_shop_cart.png',
+    //     'selectedIconPath': 'images/icon_shop_cart_active.png'
+    //   }, {
+    //     'pagePath': 'pages/info',
+    //     'text': '我',
+    //     'iconPath': 'images/icon_info.png',
+    //     'selectedIconPath': 'images/icon_info_active.png'
+    //   }]
+    // }
   }
 
   globalData = {}
-
-  constructor () {
-    super()
-    this.use('requestfix')
-  }
 
   onLaunch() {
 

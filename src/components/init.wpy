@@ -1,25 +1,24 @@
+// 组件专用
 <template>
   <view>
-    index
+
   </view>
 </template>
 
 <script>
 import wepy from 'wepy';
-
-export default class Index extends wepy.page {
-  config = {
-    'navigationBarTitleText': 'test'
-  }
+export default class Init extends wepy.component {
+  config = {}
   components = {}
   props = {}
   data = {}
   computed = {}
   methods = {}
   events = {}
-  onLoad() {}
+  onLoad() {
+
+  }
 }
 </script>
 <style lang="less">
-
 </style>
